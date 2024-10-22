@@ -62,12 +62,19 @@ quantitativamente o direcionamento dos critérios estabelecidos. Para essa categ
 | Speech | "Speech disabilities include difficulty producing speech that is recognizable..." |
 | Visual | "Visual disabilities range from mild or moderate vision loss in one or both eyes..." |
 
+Embora insprada na WCAG 2.0, a e-MAG brasileira não se utiliza dos critérios propriamente ditos. Nesse caso, foi realizada uma equiparação das recomendações da e-MAG aos critérios da WCAG 2.0 para que fosse possível realizar o mapeamento. O quadro 2 exemplifica como a categorização foi realizada. 
+
 #### Quadro 2- Equiparação dos dados e-MAG e WCAG
 
 | e-Mag 3.1 | WCAG 2.0 |
 |-----------|----------|
 | Recomendação 1.1 – Respeitar os Padrões Web | Critérios de Sucesso 4.1.1 e 4.1.2 |
 
+Por fim, o mapeamento por tipo de deficiência foi realizado diretamente nas descrições de cada critério de sucesso e, após as categorizações, foi realizada a análise descritiva dos resultados. 
+
+Desse modo, a análise qualitativa consistiu na comparação das diretrizes da WCAG e do eMAG, avaliando as semelhanças, diferenças e possíveis lacunas na cobertura para cada tipo de deficiência. Já a análise quantitativa descritiva foi feita com base no cálculo do percentual de critérios da WCAG cobertos pelo e-MAG, permitindo avaliar a distribuição das diretrizes por tipo de deficiência para a norma brasileira. 
+### 4. Resultados e discursão
+A relação entre a eMAG e a WCAG revela diferenças significativas na forma que cada um é construído. A Tabela 2 apresenta a correspondência entre os critérios de sucesso da WCAG 2.0 e as recomendações da eMAG.  
 #### Quadro 3 – e-Mag x WCAG 2.0
 
 | e-Mag 3.1 | WCAG 2.0 |
@@ -117,9 +124,9 @@ quantitativamente o direcionamento dos critérios estabelecidos. Para essa categ
 | **4.1.1** Análise sintática             |       |         | x         |        |      | x     |
 | **4.1.2** Nome, função, valor           | x     |         | x         |        |      | x     |
 
-### 4. Resultados e Discussão
+A análise dos dados obtidos a partir da comparação entre as diretrizes do eMAG e o mapeamento por tipo de deficiência revela disparidades na forma como cada deficiência é abordada. Essa análise sugere que a construção das diretrizes pode indicar uma preferência por contemplar mais os requisitos relacionados a certas deficiências em detrimento de outras. Essa preferência, nesse contexto, pode ser lida como uma forma de definir prioridades na implementação de leis de acesso a certos grupos. Como destacado na literatura sobre priorização de requisitos, a decisão de quais funcionalidades ou requisitos que serão atendidos é um processo complexo, envolvendo múltiplos aspectos como custo, tempo, recursos e a própria viabilidade técnica [24]. Esse processo, no entanto, nem sempre é equilibrado, e pode levar a escolhas que priorizam certos grupos de usuários em detrimento de outros.  
 
-As Tabelas 4 e 5 mostram, respectivamente, os tipos de deficiência mais frequentemente contemplados pela WCAG 2.0 e pela eMAG.
+As tabelas 4 e 5 mostram, respectivamente, os tipos de deficiência mais frequentemente contemplados pela WCAG 2.0 e pela eMAG. 
 
 #### Tabela 4 - WCAG 2.0
 
@@ -133,10 +140,120 @@ As Tabelas 4 e 5 mostram, respectivamente, os tipos de deficiência mais frequen
 |-------|----------|------------|---------|------|
 | 82.50% | 25.00% | 85.00% | 35.00% | 0.00% |
 
+As Tabelas 4 e 5 evidenciam a distribuição desigual de critérios de acessibilidade entre diferentes tipos de deficiência, tanto na WCAG 2.0 quanto na utilização pela eMAG. As deficiências visuais e cognitivas recebem maior atenção, com ênfase expressiva na eMAG (82,50% e 85%, respectivamente). A balança se mostra muito desequilibrada quando comparamos com outras deficiências como audição e fala nas duas normas. Tal abordagem reflete as demandas práticas do ambiente digital, predominantemente visual, onde barreiras enfrentadas por esses grupos são mais severas. Assim, a menor atenção dedicada às deficiências auditivas e de fala, por sua vez, não implica em exclusão, mas sinaliza uma necessidade distinta de recursos técnicos. A falta de critérios para a fala, por exemplo, reflete o fato de que a internet utiliza predominantemente texto e cliques, diminuindo a relevância de adaptações nesse sentido. Portanto, a alocação de recursos não é uma questão de disparidade injusta, mas de equidade, considerando a natureza das barreiras impostas a cada grupo de deficiência no contexto web.  
+
+
+### 4.1 Contexto governamental brasileiro 
+
+O governo brasileiro, ao criar Emag para suprir a necessidade de criar sites para todos, se depara com uma população em que 18.580 pessoas com 2 anos ou mais possuem algum tipo de deficiência. A separação para cada tipo de deficiência, categorizada por dificuldades específicas, resulta num quadro diferente do ilustrado pelas priorizações da Emag. 
+
+--- imagem ----
+
+Apesar da maior proporção de população para dificuldades físicas e de movimentação, o cenário das tecnologias tem se mostrado tendencioso para alguns outros tipos de deficiência, desenvolvendo soluções inovadoras no mundo digital. Pessoas com deficiência visual têm sido supridas em grande medida no que se diz respeito às tecnologias assistivas disponíveis para meios digitais [23], tanto em modelos de navegação mobile quanto em navegação desktop. Funções como assistentes de voz e controle de tamanho de texto já são implementadas nativamente nos smartphones e sistemas operacionais [36][37].  Além disso, as deficiências relacionadas a Cognitive and learning tem ganhado grande foco em cognitive assistive technology (CAT) [40], assunto que, não recente, é reforçado na atualidade cada vez mais e expressa 85% de participação na e-Mag e significante proporção na WCAG 2.0, que auxiliam, diariamente, diversas pessoas [38].   
 ### 5. Conclusões
 
-A análise realizada contribui significativamente para as pesquisas em acessibilidade na Web, especialmente no contexto governamental. Ela é essencial para compreender as lacunas que as normas de acessibilidade buscam preencher, com uma ênfase particular nas necessidades de pessoas com deficiências visuais e cognitivas.
+A análise realizada contribui significativamente para as pesquisas em acessibilidade na Web, especialmente no contexto governamental. Ela é essencial para compreender as lacunas que as normas de acessibilidade buscam preencher, com uma ênfase particular nas necessidades de pessoas com deficiências visuais e cognitivas. O estudo quantificou, de forma clara, a representatividade das diferentes deficiências nas diretrizes de acessibilidade. No caso da eMAG, é possível observar que ela segue, em grande parte, as mesmas prioridades da WCAG 2.0, com um enfoque mais forte nas deficiências visuais e cognitivas em suas recomendações. 
+
+Além disso, os resultados qualitativos revelam a justificativa por trás dessa priorização, que reflete a gravidade das barreiras enfrentadas por esses grupos. Nesse sentido, a eMAG busca promover equidade, reconhecendo que diferentes deficiências demandam diferentes níveis de atenção e suporte, ao invés de adotar uma distribuição igualitária de requisitos. 
+
+Entretanto, as limitações da eMAG se manifestam na falta de atualizações recentes. Ao contrário da WCAG, que continua evoluindo com o tempo, a eMAG não foi atualizada nos últimos 10 anos, o que a torna desatualizada em relação aos novos desafios de acessibilidade emergentes. 
+
+Portanto, é imperativo que a eMAG seja revisada para refletir as necessidades e realidades do cenário atual. Desde a última versão da WCAG, foram adicionados novos critérios de sucesso, o que pode alterar a relação entre os tipos de deficiência contemplados e preencher novas lacunas, tornando a acessibilidade digital mais inclusiva e eficaz. 
+
+ 
+
+Respondeu à pergunta? Falar brevemente 
+
+Resultados pincelados mais importantes  
+
+Limitações da pesquisa emag desatualizada, dirtetriz 2.0  
+
+Pesquisas futuras fazer atualizacao com wcag atual 
 
 ### 6. Referências
 
-[Lista de referências numeradas de 1 a 40]
+ 
+
+[1] https://www.w3.org/WAI/fundamentals/accessibility-intro/ 
+
+[2] INTEGRATION OF WEB ACCESSIBILITY INTO AGILE METHODS, 2012 
+
+[3] Accessibility Evaluation of E-Government Mobile Applications in Brazil, 2015 
+
+[4] Engendering inclusive e-government use through citizen IT training programs, 2019 
+
+[5] https://emag.governoeletronico.gov.br/  
+
+[6] https://www.w3.org/WAI/standards-guidelines/wcag/  
+
+[7] https://www.w3.org/TR/WCAG20/  
+
+[8] The online users’ perceptions toward electronic government services, 2020  
+
+[15] Convergence innovation in the digital age and in the COVID-19 pandemic crisis, 2021 
+
+[16] Understanding consumers’ acceptance of automated technologies in service encounters: Drivers of digital voice assistants adoption, 2021 
+
+[17] Unrealized potential: Exploring the digital disability divide, 2016 
+
+[18] https://www.who.int/news-room/fact-sheets/detail/disability-and-health#:~:text=Over%201%20billion%20people%20are%20estimated%20to%20experience,difficulties%20in%20functioning%2C%20often%20requiring%20health%20care%20services. (2023) 
+
+[19] Bridging the Disability Divide through Digital Technologies, 2016 
+
+ 
+
+ 
+
+[9] https://www.w3.org/WAI/people-use-web/abilities-barriers/auditory/  
+
+[10] https://www.w3.org/WAI/people-use-web/abilities-barriers/cognitive/  
+
+[11] https://www.w3.org/WAI/people-use-web/abilities-barriers/  
+
+[12] https://www.w3.org/WAI/people-use-web/abilities-barriers/physical/  
+
+[13] https://www.w3.org/WAI/people-use-web/abilities-barriers/speech/  
+
+[14] https://www.w3.org/WAI/people-use-web/abilities-barriers/visual/  
+
+ 
+
+[20] The persona lifecycle: keeping people in mind throughout product design. 
+
+[21] Identifying Possible Requirements using Personas A Qualitative Study, 2017 
+
+[22] https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital  
+
+[23] Acessibilidade no cotidiano de pessoas com deficiência visual 
+
+[24] Requirements Prioritization, 2005 
+
+[25] KULKARNI, Mukta. Digital accessibility: Challenges and opportunities. IIMB Management Review, v. 31, n. 1, p. 91-98, 2019. 
+
+[26] LAZAR, Jonathan et al. Equal access to information? Evaluating the accessibility of public library web sites in the State of Maryland. In: Designing inclusive systems: Designing inclusion for real-world applications. Springer London, 2012. p. 185-194. 
+
+[27] ROWLAND, Cyndi. History of the Known: Digital accessibility as an issue of social justice in US education. In: Guide to Digital Accessibility. Routledge, 2023. p. 3-16. 
+
+[28] GONZÁLEZ, Desirée; DEL PRETE, Annachiara. Online training programs for adults with disabilities: a systematic review. Humanities and Social Sciences Communications, v. 11, n. 1, p. 1-13, 2024. 
+
+[29] GIL, Antônio Carlos. Como elaborar projetos de pesquisa. Editora Atlas SA, 2002. 
+[30] Référentiel général d’amélioration de l’accessibilité - RGAA (numerique.gouv.fr) 
+
+[31] en_301549v030201p.pdf 
+
+[32] Guide to Accessible Web Design & Development | Section508.gov 
+[33] Americans with Disabilities Act of 1990, As Amended | ADA.gov 
+
+[34] Loi n° 2005-102 du 11 février 2005 (legifrance.gouv.fr) 
+
+[35] L10098 (planalto.gov.br) 
+
+[36] Usage of Accessibility Options for the iPhone and iPad in a Visually Impaired Population, 2014 
+
+[37] Smartphones as assistive technology for visual impairment, 2021 
+
+[38] Cognitive assistive technology and professional support in everyday life for adults with ADHD 
+
+[39] Emotion and Motivation in Cognitive Assistive Technologies for Dementia, 2018 
+
+[40] Granlund, Mats et al. ‘Assistive Technology for Cognitive Disability’. 1 Jan. 1995 : 205 – 214. 
