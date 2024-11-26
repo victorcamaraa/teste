@@ -1,54 +1,84 @@
-Para gerar um checklist com base no Guia HTML do CEWEB.br, considerando os critérios mencionados, elaborei os seguintes pontos divididos em seções com foco nos principais aspectos abordados no guia. 
+## Grupo 3 - IHC
+#### Membros:
+André João Cordeiro Gomes - 211061402\
+Gabriela Tiago de Araújo - 190028475\
+Hauedy Wegener Soares - 211030792\
+Jesus Gabriel Carvalho Ventura - 211062956\
+Lucas Heler Lopes - 202016800\
+Víctor Augusto de Sousa Câmara - 221031238
 
-### **Checklist - Guia HTML do CEWEB.br**
-  
+### **Checklist - Guia HTML do CEWEB.br**  
+
 #### **1. Estruturação do conteúdo**  
-- [ ] Todas as páginas possuem elementos estruturais obrigatórios (`<html>`, `<head>`, `<body>`).  
-- [ ] A semântica do HTML está bem definida, com uso apropriado de `<header>`, `<main>`, `<article>`, `<footer>`, etc.  
-- [ ] Cada documento tem um título claro e descritivo usando a tag `<title>`.  
-- [ ] Metadados relevantes (como descrição e palavras-chave) estão configurados usando `<meta>`.  
+- [ ] As páginas começam com a declaração de tipo de documento correta (`<!DOCTYPE html>`).  
+- [ ] A tag `<html>` define corretamente o idioma do documento com o atributo `lang` (ex.: `lang="pt-br"`).  
+- [ ] O elemento `<head>` inclui metadados essenciais como charset (`<meta charset="UTF-8">`).  
+- [ ] Elementos `<section>`, `<article>`, e `<aside>` são utilizados para organizar o conteúdo por relevância.  
+- [ ] Cada `<article>` e `<section>` possui títulos próprios utilizando tags de cabeçalho (ex.: `<h2>`).  
+- [ ] O rodapé da página contém informações importantes ou links úteis, como contatos ou políticas.  
 
-#### **2. Acessibilidade e boas práticas**  
-- [ ] Imagens possuem textos alternativos significativos no atributo `alt`.  
-- [ ] Tabelas de dados incluem cabeçalhos adequados usando `<th>` e `scope`.  
-- [ ] Navegação é estruturada e utiliza links claramente definidos com textos descritivos.  
-- [ ] São usados atributos ARIA apenas quando estritamente necessários e de forma correta.  
-- [ ] Há suporte completo para navegação por teclado e uso de leitores de tela.  
+#### **2. Acessibilidade e inclusão**  
+- [ ] Há contraste suficiente entre texto e fundo, atendendo ao nível AA da WCAG 2.2.  
+- [ ] Os links possuem descrições significativas, evitando textos genéricos como "clique aqui".  
+- [ ] Formulários utilizam mensagens de erro claras e acessíveis para leitores de tela.  
+- [ ] Componentes dinâmicos, como modais ou menus, informam seu estado aos usuários (ex.: abertos ou fechados).  
+- [ ] A ordem do foco ao navegar com teclado é lógica e intuitiva.  
+- [ ] Conteúdos animados ou interativos têm opção de pausar, parar ou ocultar a animação.  
+- [ ] O tempo de resposta ao usuário (ex.: timeout) é ajustável, evitando ações não intencionais.  
 
-#### **3. Design responsivo**  
-- [ ] O layout é responsivo, utilizando a tag `<meta name="viewport">`.  
-- [ ] O CSS é utilizado para adaptar o site a diferentes tamanhos de tela.  
-- [ ] Elementos interativos possuem tamanhos adequados para dispositivos móveis.  
+#### **3. Design responsivo e visual**  
+- [ ] O layout utiliza unidades flexíveis como porcentagens e `em` ao invés de pixels fixos.  
+- [ ] O conteúdo não ultrapassa as margens da tela em dispositivos móveis.  
+- [ ] Imagens e vídeos utilizam tamanhos responsivos com o atributo `max-width: 100%`.  
+- [ ] Elementos como menus ou sliders possuem opções amigáveis para telas menores (ex.: menus hambúrguer).  
+- [ ] Os textos permanecem legíveis em qualquer tamanho de tela, respeitando boas práticas tipográficas.  
 
 #### **4. SEO e indexação**  
-- [ ] Tags de cabeçalho (`<h1>` a `<h6>`) estão hierarquicamente estruturadas.  
-- [ ] Links são rastreáveis e evitam o uso de `#` sem funcionalidade.  
-- [ ] Não há uso excessivo de `<div>` ou classes desnecessárias.  
+- [ ] A tag `<meta name="description">` descreve adequadamente o propósito da página.  
+- [ ] Links externos utilizam o atributo `rel="nofollow"` quando necessário.  
+- [ ] Todas as URLs são amigáveis e evitam parâmetros desnecessários.  
+- [ ] Imagens têm descrições adequadas usando `alt` e utilizam atributos de largura e altura para carregamento otimizado.  
+- [ ] Vídeos incorporados utilizam tags `<track>` para legendas automáticas quando disponíveis.  
+- [ ] Títulos `<title>` de páginas são únicos e refletem o conteúdo principal da página.  
 
 #### **5. Validação de código**  
-- [ ] O código HTML foi validado usando ferramentas como o [Validador W3C](https://validator.w3.org/).  
-- [ ] Não há erros ou advertências no HTML/CSS gerado.  
-- [ ] O site segue as diretrizes WCAG 2.2 ou eMAG no contexto brasileiro.  
+- [ ] O código foi verificado quanto a erros de sintaxe e formatação.  
+- [ ] Todas as tags abertas possuem fechamento apropriado (mesmo em XHTML).  
+- [ ] Não há elementos descontinuados, como `<font>`, `<center>` ou `<marquee>`.  
+- [ ] Scripts externos são carregados de maneira assíncrona ou diferida para melhorar o desempenho.  
+- [ ] CSS e JavaScript são minificados e otimizados para reduzir o tempo de carregamento.  
 
-#### **6. Conteúdo multimídia**  
-- [ ] Vídeos incluem legendas e/ou transcrições para acessibilidade.  
-- [ ] Não há reprodução automática de mídia sem controle do usuário.  
-- [ ] Elementos de mídia possuem controles claros e acessíveis.  
+#### **6. Conteúdo multimídia e gráficos**  
+- [ ] Cada vídeo possui uma descrição textual ou transcrição associada para acessibilidade.  
+- [ ] Elementos gráficos (como SVG) utilizam títulos e descrições acessíveis.  
+- [ ] Mídias pesadas são carregadas de forma preguiçosa (lazy loading) para otimizar o desempenho.  
+- [ ] Áudios e vídeos possuem controles visíveis e utilizáveis tanto com mouse quanto teclado.  
+- [ ] Há uma indicação clara quando o conteúdo está carregando (ex.: ícones de progresso).  
 
-#### **7. Interatividade e experiência do usuário**  
-- [ ] Formulários são acessíveis, com rótulos associados aos campos (`<label>`).  
-- [ ] Botões possuem ações claramente descritas e textos acessíveis.  
-- [ ] Feedback é fornecido de maneira clara ao usuário após interações (ex.: envio de formulário).  
+#### **7. Interatividade e experiência do usuário (UX)**  
+- [ ] Botões utilizam texto ou ícones compreensíveis ao invés de caracteres arbitrários.  
+- [ ] Feedback visual (ex.: mudança de cor) é dado ao interagir com botões ou links.  
+- [ ] Campos obrigatórios em formulários estão claramente indicados.  
+- [ ] Há mensagens de confirmação para ações importantes, como exclusões de dados.  
+- [ ] Pop-ups ou modais aparecem em contextos claros, com botão de fechar acessível.  
+- [ ] O tempo de resposta do site é adequado (ex.: menos de 2 segundos para carregamento).  
 
 #### **8. Documentação e manutenção**  
-- [ ] O projeto é documentado com comentários claros no código.  
-- [ ] O guia oferece exemplos práticos e fáceis de implementar.  
-- [ ] Os desenvolvedores têm acesso a orientações para atualizar ou expandir o código.  
+- [ ] A estrutura do projeto segue boas práticas de organização, como separação entre HTML, CSS e JavaScript.  
+- [ ] Comentários no código explicam trechos complexos ou menos intuitivos.  
+- [ ] O guia inclui exemplos práticos para casos de uso comuns.  
+- [ ] Atualizações do projeto são fáceis de aplicar com base na estrutura e documentação.  
 
-### **Critérios aplicados ao checklist**
-1. **Completude:** Os principais tópicos do guia são abrangidos em profundidade.  
-2. **Objetividade:** Itens curtos e claros para rápida verificação.  
-3. **Atratividade:** Checklist dividido em seções com formatação para facilitar leitura.  
-4. **Design:** Estrutura organizada, permitindo impressão ou digitalização para uso contínuo.
+#### **9. Segurança**  
+- [ ] Formulários utilizam validação no lado cliente e servidor.  
+- [ ] O site protege contra ataques comuns, como injeção de scripts (XSS) e CSRF.  
+- [ ] Dados sensíveis não são exibidos no HTML ou acessíveis por meio de inspeção de elementos.  
+- [ ] Todas as conexões utilizam HTTPS.  
 
-Se precisar de algum ajuste ou formatação específica, é só avisar! 😊
+#### **10. Testes e monitoramento**  
+- [ ] Testes de usabilidade foram conduzidos com usuários reais.  
+- [ ] O desempenho foi analisado usando ferramentas como Google Lighthouse ou GTmetrix.  
+- [ ] Ferramentas de análise e logs de erros estão configurados (ex.: Google Analytics).  
+- [ ] O site foi testado em diferentes navegadores e dispositivos para verificar compatibilidade.  
+
+---  
