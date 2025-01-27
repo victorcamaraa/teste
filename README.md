@@ -8,56 +8,71 @@ Jesus Gabriel Carvalho Ventura - 211062956\
 Lucas Heler Lopes - 202016800\
 Víctor Augusto de Sousa Câmara - 221031238
 
-### **Checklist - Guia HTML do CEWEB.br**
-  
-#### **1. Estruturação do conteúdo**  
-- [ ] Todas as páginas possuem elementos estruturais obrigatórios (`<html>`, `<head>`, `<body>`).  
-- [ ] A semântica do HTML está bem definida, com uso apropriado de `<header>`, `<main>`, `<article>`, `<footer>`, etc.  
-- [ ] Cada documento tem um título claro e descritivo usando a tag `<title>`.  
-- [ ] Metadados relevantes (como descrição e palavras-chave) estão configurados usando `<meta>`.  
 
-#### **2. Acessibilidade e inclusão**  
-- [ ] Há contraste suficiente entre texto e fundo, atendendo ao nível AA da WCAG 2.2.  
-- [ ] Os links possuem descrições significativas, evitando textos genéricos como "clique aqui".  
-- [ ] Formulários utilizam mensagens de erro claras e acessíveis para leitores de tela.  
-- [ ] Componentes dinâmicos, como modais ou menus, informam seu estado aos usuários (ex.: abertos ou fechados).  
-- [ ] A ordem do foco ao navegar com teclado é lógica e intuitiva.  
-- [ ] Conteúdos animados ou interativos têm opção de pausar, parar ou ocultar a animação.  
-- [ ] O tempo de resposta ao usuário (ex.: timeout) é ajustável, evitando ações não intencionais.  
+**Guia de Acessibilidade**  
 
-#### **3. Design responsivo**  
-- [ ] O layout é responsivo, utilizando a tag `<meta name="viewport">`.  
-- [ ] O CSS é utilizado para adaptar o site a diferentes tamanhos de tela.  
-- [ ] Elementos interativos possuem tamanhos adequados para dispositivos móveis.  
+---
 
-#### **4. SEO e indexação**  
-- [ ] Tags de cabeçalho (`<h1>` a `<h6>`) estão hierarquicamente estruturadas.  
-- [ ] Links são rastreáveis e evitam o uso de `#` sem funcionalidade.  
-- [ ] Não há uso excessivo de `<div>` ou classes desnecessárias.  
+### **1. Organização e Navegação Compreensíveis**  
+- Organize os elementos de tela para facilitar a leitura e a navegação em diferentes dispositivos e tamanhos de tela.  
+- Utilize tecnologias assistivas para garantir que a sequência lógica seja mantida.  
 
-#### **5. Validação de código**  
-- [ ] O código HTML foi validado usando ferramentas como o [Validador W3C](https://validator.w3.org/).  
-- [ ] Não há erros ou advertências no HTML/CSS gerado.  
-- [ ] O site segue as diretrizes WCAG 2.2 ou eMAG no contexto brasileiro.  
+### **2. Títulos Claros e Objetivos**  
+- Certifique-se de que os títulos sejam descritivos e reflitam o conteúdo da página.  
+- Evite títulos genéricos, priorizando termos que ajudem na compreensão imediata.  
 
-#### **6. Conteúdo multimídia e gráficos**  
-- [ ] Cada vídeo possui uma descrição textual ou transcrição associada para acessibilidade.  
-- [ ] Elementos gráficos (como SVG) utilizam títulos e descrições acessíveis.  
-- [ ] Mídias pesadas são carregadas de forma preguiçosa (lazy loading) para otimizar o desempenho.  
-- [ ] Áudios e vídeos possuem controles visíveis e utilizáveis tanto com mouse quanto teclado.  
-- [ ] Há uma indicação clara quando o conteúdo está carregando (ex.: ícones de progresso).  
+### **3. Orientações Não Sensoriais**  
+- Dê instruções que não dependam de características sensoriais, como cores ou posições.  
+  Exemplo: use “clique no botão abaixo” em vez de “clique no botão vermelho”.  
 
-#### **7. Interatividade e experiência do usuário (UX)**  
-- [ ] Botões utilizam texto ou ícones compreensíveis ao invés de caracteres arbitrários.  
-- [ ] Feedback visual (ex.: mudança de cor) é dado ao interagir com botões ou links.  
-- [ ] Campos obrigatórios em formulários estão claramente indicados.  
-- [ ] Há mensagens de confirmação para ações importantes, como exclusões de dados.  
-- [ ] Pop-ups ou modais aparecem em contextos claros, com botão de fechar acessível.  
-- [ ] O tempo de resposta do site é adequado (ex.: menos de 2 segundos para carregamento).    
+### **4. Conteúdo Visual com Descrições Textuais**  
+- Aplique descrições ALT em imagens, ícones e gráficos para explicar sua função e contexto.  
+- Garanta que as descrições sejam claras, evitando informações redundantes.  
 
-#### **8. Documentação e manutenção**  
-- [ ] O projeto é documentado com comentários claros no código.  
-- [ ] O guia oferece exemplos práticos e fáceis de implementar.  
-- [ ] Os desenvolvedores têm acesso a orientações para atualizar ou expandir o código.  
+### **5. Consistência na Interação**  
+- Use rótulos e instruções consistentes para campos e botões.  
+- Evite mudanças inesperadas em fluxos ou layouts.  
 
----  
+### **6. Minimização de Redundâncias**  
+- Evite informações repetidas, como formulários excessivamente detalhados, a menos que necessário.  
+
+### **7. Clareza em Mensagens de Erro**  
+- Certifique-se de que mensagens de erro sejam claras e expliquem como corrigir o problema.  
+- Utilize múltiplos recursos (texto, áudio, etc.) para indicar erros.  
+
+### **8. Links Descritivos**  
+- Dê textos significativos aos links para que expliquem sua finalidade.  
+- Exemplo: use “Leia mais sobre acessibilidade” em vez de “Clique aqui”.  
+
+### **9. Controle Flexível de Interação**  
+- Ofereça alternativas para ações que dependem de gestos ou movimentos.  
+- Permita que usuários cancelem ou desativem comandos acidentais.  
+
+### **10. Navegação por Teclado**  
+- Garanta que todas as funcionalidades sejam acessíveis apenas pelo teclado.  
+- Evite barreiras que prejudiquem usuários que não utilizam mouse.  
+
+### **11. Ignorar Repetições**  
+- Inclua atalhos para que usuários possam pular conteúdos repetidos, como menus ou cabeçalhos.  
+
+### **12. Ajuste de Tempo e Movimento**  
+- Permita que os usuários pausarem, ajustarem ou desativarem movimentos e temporizadores.  
+- Ofereça opções para controlar ações automaticamente executadas, como rolagem de tela.  
+
+### **13. Rótulos Acessíveis e Coerentes**  
+- Certifique-se de que todos os rótulos e controles correspondam claramente às suas funções.  
+
+### **14. Transcrições e Legendas**  
+- Forneça legendas sincronizadas para vídeos e transcrições para áudios.  
+- Inclua audiodescrições para conteúdos visuais importantes.  
+
+### **15. Formatação de Ajuda**  
+- Ofereça ajuda de forma acessível, incluindo tutoriais claros e dicas automáticas em campos.  
+
+### **16. Contraste Visual e Personalização**  
+- Garanta contraste adequado entre texto e fundo.  
+- Ofereça opções para alterar contraste e esquema de cores.  
+
+---
+
+Este guia usa como base a WCAG e o guia brasileiro de acessibilidade e inclusão
