@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caça Promoções de Hardware</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Caça Promoções <span>de Hardware</span></h1>
+      <p class="subtitle">Ofertas de processadores, memória, placas de vídeo e armazenamento em lojas brasileiras</p>
+    </div>
+    <div class="refresh">
+      <span id="status-text" class="muted">Carregando…</span>
+      <button id="refresh-btn" type="button">Buscar agora</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <form id="filters" class="filters" autocomplete="off">
+      <fieldset>
+        <legend>Tipo de peça</legend>
+        <div class="chips">
+          {% for key, cat in categories.items() %}
+          <label class="chip">
+            <input type="checkbox" name="categoria" value="{{ key }}">
+            <span>{{ cat.label }}</span>
+          </label>
+          {% endfor %}
+        </div>
+        <p class="hint">Nenhum marcado = todos os tipos</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Buscar</legend>
+        <input type="search" name="q" placeholder="ex.: RTX 4060, Ryzen 7, DDR5, NVMe 1TB">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preço (R$)</legend>
+        <div class="row">
+          <input type="number" name="preco_min" min="0" step="10" placeholder="mín.">
+          <input type="number" name="preco_max" min="0" step="10" placeholder="máx.">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Desconto mínimo: <output id="desconto-out">0%</output></legend>
+        <input type="range" name="desconto_min" min="0" max="70" step="5" value="0">
+      </fieldset>
+
+      <fieldset>
+        <legend>Lojas</legend>
+        {% for store in stores %}
+        <label class="check"><input type="checkbox" name="loja" value="{{ store }}" checked> {{ store }}</label>
+        {% endfor %}
+      </fieldset>
+
+      <fieldset>
+        <legend>Opções</legend>
+        <label class="check"><input type="checkbox" name="so_promocoes" checked> Só promoções</label>
+        <label class="check"><input type="checkbox" name="so_disponiveis" checked> Só em estoque</label>
+        <label class="field">Ordenar por
+          <select name="ordem">
+            <option value="desconto">Maior desconto</option>
+            <option value="menor_preco">Menor preço</option>
+            <option value="maior_preco">Maior preço</option>
+            <option value="recentes">Mais recentes</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+
+    <section>
+      <div class="results-head">
+        <h2 id="count">Ofertas</h2>
+        <details id="stores-status">
+          <summary>Status das lojas</summary>
+          <table><tbody id="status-table"></tbody></table>
+        </details>
+      </div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden></p>
+    </section>
+  </main>
+
+  <template id="card-tpl">
+    <article class="card">
+      <a class="thumb" target="_blank" rel="noopener"><img alt="" loading="lazy"></a>
+      <div class="body">
+        <div class="tags"></div>
+        <a class="title" target="_blank" rel="noopener"></a>
+        <div class="prices">
+          <span class="old"></span>
+          <span class="price"></span>
+        </div>
+        <div class="foot muted"></div>
+      </div>
+    </article>
+  </template>
+
+  <script>window.CATEGORIES = {{ categories|tojson }};</script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
