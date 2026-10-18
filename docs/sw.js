@@ -1,5 +1,5 @@
 // Rede primeiro, cache como reserva: sempre pega a versão nova quando online e funciona offline.
-const CACHE = 'escuta-v1';
+const CACHE = 'escuta-v2';
 const ASSETS = ['./', './index.html', './worklet.js', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
